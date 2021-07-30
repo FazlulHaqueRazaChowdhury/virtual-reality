@@ -1,0 +1,155 @@
+:root {
+    /* regular */
+    --header-font-family : Bungee;
+    /* medium  */
+    --banner-font-family : Raleway;
+    /* regular  */
+    --body-font-family : Raleway;
+     /* bold  */
+    --button-font-family : Raleway;
+    
+    /*font-color*/
+    --header-color :#ffffff ;
+    --banner-color :  #c8699b;
+    --body-color : #fff7f1;
+    --button-color: #2a234e;
+}
+
+
+/*header section starts here */
+header {
+    overflow: hidden;
+}
+/* .btns {
+    display: inline;
+    width: auto;
+    height: auto;
+} */
+
+.navs {
+    margin-top: 2% 5% !important;
+    padding-top: 0% !important;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+nav {
+    background-color: #2a234e;
+    height: 100vh;
+    
+}
+.items-right {
+   
+    background: linear-gradient(#7e4877,#322752) ;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.myForm {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.icon {
+    color: #ef7aae;
+    background-color: transparent;
+}
+
+.svg1 {
+    position: absolute;
+    left : -80%;
+    top: -50%;
+    transform:scale(1.2) rotate(320deg);
+    z-index: 1;
+    animation: svgs 5s;
+    animation-iteration-count: infinite;
+    animation-delay: none;
+}
+.svg2 {
+    position: absolute;
+    left : -70%;
+    top: -65%;
+    transform:scale(1.2) rotate(353deg);
+    z-index: 1;
+    animation: svgs 5s;
+    animation-iteration-count: infinite;
+    animation-delay: none;
+}
+/* @keyframes svgs {
+    0% {
+        left: -80%;
+
+    }
+    100% {
+    transform: scale(1.5) rotate(360deg);
+    }
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+} */
+
+.title {
+    color: var(--header-color);
+    font-family: var(--header-font-family);
+    font-weight: 400;
+
+ 
+}
+.banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+.banner {
+    color: var(--banner-color);
+    font-family: var(--body-font-family);
+    font-weight: 300;
+    
+}
+.content {
+    font-family: var(--body-font-family);
+    font-weight: 500;
+    color: white;
+    margin: 5% 0%;
+}
+.button {
+    border-radius: 10000px;
+    background-color: #ef7aae;
+    color: #2a234e;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: ease .5s;
+}
+.nav-link {
+    color: #ef7aae !important;
+}
+.form-control {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+.searchButton {
+
+    color: #ef7aae;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+  
+    
+    z-index: 12;
+    
+}
+form {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+.icons {
+    margin-right: 10px;
+}
+.icons:hover {
+    transform: scale(1.3);
+    transition: .5s ease;
+}
